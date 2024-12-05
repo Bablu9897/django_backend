@@ -18,26 +18,28 @@
     cd SoftwareSathi
 
 2. Create a virtual environment:
-
+    ```bash
     python -m venv venv
 
 3. Activate the virtual environment:
     * On Windows:
+      ```bash
         venv\Scripts\activate
 
     * On macOS/Linux:
+      ```bash
         source venv/bin/activate
 
 4. Install dependencies:
-
+    ```bash
     pip install -r requirements.txt
 
 5. Apply database migrations:
-
+    ```bash
     python manage.py migrate
 
 6. Run the development server:
-
+    ```bash
     python manage.py runserver
 
 Your application should now be running at http://127.0.0.1:8000/
@@ -49,13 +51,13 @@ POST api/auth/signup/
 Creates a new user.
 
 Request Example:
-
+```bash
 {
   "username": "user1",
   "email": "user1@example.com",
   "password": "securepassword"
 }
-
+```
 Response Example:
 
 {
