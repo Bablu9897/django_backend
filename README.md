@@ -59,17 +59,18 @@ Request Example:
 }
 ```
 Response Example:
-
+```bash
 {
   "message": "User created successfully",
   "user_id": 1
 }
 
+```
 ## User Login
 
 POST /api/login
 Logs in an existing user.
-
+```bash
 Request Example:
 
 {
@@ -77,31 +78,34 @@ Request Example:
   "password": "securepassword"
 }
 
+```
 Response Example:
-
+```bash
 {
   "message": "Login successful",
   "token": "jwt_token_here"
 }
 
+```
 ## Data Creation
 POST /api/data
 Creates a new data entry.
 
 Request Example:
-
+```bash
 {
   "title": "Data title",
   "description": "Description of the data"
 }
 
+```
 Response Example:
-
+```bash
 {
   "title": "Data title",
   "description": "Description of the data"
 }
-
+```
 
 ## API Endpoints
 POST /api/auth/signup - User Signup
